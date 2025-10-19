@@ -42,6 +42,6 @@ function showTasks(){
   list.innerHTML = "";
 
   for(var i = 0; i < tasks.length; i++){
-    list.innerHTML += "<li>" + tasks[i]+ " <button onclick='editTask("+i+")'>Edit</button>" + "<button onclick='deleteTask("+i+")'>Delete</button></li>";
+    list.innerHTML += "<li>" + tasks[i]+ " <button class='editbtn' onclick='editTask("+i+")'>Edit</button>" + "<button class='dltbtn' onclick='deleteTask("+i+")'>Delete</button></li>";
   }
 }
